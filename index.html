@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative Ads KE helps businesses and entrepreneurs promote their products and services with professional, affordable advertising in Kenya.">
+  <meta name="theme-color" content="#10243a">
+  <title>Creative Ads KE | Creative Advertising at Fair Prices</title>
+  <style>
+    :root{--navy:#10243a;--blue:#2457f5;--gold:#ffbd45;--cream:#f6f8fc;--ink:#172235;--muted:#647087;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:0 auto}
+    header{background:rgba(255,255,255,.97);border-bottom:1px solid #e9edf5;position:sticky;top:0;z-index:10}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.2rem;letter-spacing:-.4px;color:var(--navy)}
+    .brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--blue);color:white;font-size:1.3rem}
+    .nav-links{display:flex;gap:25px;align-items:center;color:#4c5870;font-size:.95rem}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:800;border:0;cursor:pointer;transition:transform .18s,box-shadow .18s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #10243a20}.btn-primary{background:var(--blue);color:white}.btn-light{background:white;color:var(--navy);border:1px solid #dfe5f0}
+    .hero{background:radial-gradient(circle at 85% 15%,#dce6ff 0,transparent 30%),linear-gradient(135deg,#f7f9ff 0%,#fff 58%,#fff7e7 100%);padding:80px 0 74px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:99px;background:#e9efff;color:#2149c8;font-size:.83rem;font-weight:800}
+    h1{font-size:clamp(2.7rem,5.5vw,4.55rem);line-height:1.04;letter-spacing:-2.4px;margin:20px 0;color:var(--navy)}h1 span{color:var(--blue)}
+    .hero p{max-width:590px;color:var(--muted);font-size:1.12rem;margin-bottom:27px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.trust{margin-top:24px;color:#647087;font-size:.9rem}
+    .ad-board{position:relative;min-height:390px;display:grid;place-items:center}
+    .poster{width:min(390px,100%);min-height:325px;border-radius:28px;padding:30px;background:var(--navy);color:white;box-shadow:0 28px 65px #10243a2c;transform:rotate(2deg);position:relative;overflow:hidden}
+    .poster:before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:var(--blue);right:-70px;top:-70px;opacity:.9}.poster:after{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:var(--gold);right:-35px;bottom:-65px}
+    .poster-content{position:relative;z-index:1}.poster-small{text-transform:uppercase;font-size:.75rem;letter-spacing:2px;font-weight:900;color:var(--gold)}
+    .poster h2{font-size:2.55rem;line-height:1.02;letter-spacing:-1px;margin:22px 0 14px;max-width:270px}.poster p{color:#e2e9f5;font-size:1rem;max-width:240px}
+    .poster-tag{display:inline-block;margin-top:14px;background:var(--gold);color:var(--navy);font-weight:900;padding:10px 14px;border-radius:8px}
+    .floating{position:absolute;background:white;border-radius:16px;padding:14px 17px;box-shadow:0 14px 35px #10243a20;font-weight:800;color:var(--navy);z-index:2}.floating.one{top:24px;left:0;transform:rotate(-5deg)}.floating.two{bottom:24px;left:8px;transform:rotate(3deg)}
+    section{padding:76px 0}.services{background:var(--cream)}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head h2{font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.12;letter-spacing:-1px;color:var(--navy);margin:12px 0}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e9edf5;border-radius:20px;padding:26px;box-shadow:0 8px 25px #10243a05}
+    .card-icon{width:52px;height:52px;display:grid;place-items:center;background:#edf1ff;border-radius:15px;font-size:1.5rem;margin-bottom:17px}.card h3{color:var(--navy);margin:0 0 8px;font-size:1.2rem}.card p{color:var(--muted);margin:0;font-size:.96rem}
+    .why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.why-panel{background:#eef3ff;border-radius:24px;padding:30px}.why-panel h3{color:var(--navy);font-size:1.7rem;line-height:1.2;margin:0 0 12px}.why-panel p{color:var(--muted)}
+    .check-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:14px}.check-list li{display:flex;gap:11px;align-items:flex-start}.check{flex:0 0 25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#dff7eb;color:#13784b;font-weight:900}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{padding:8px 8px 8px 0}.step-num{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--gold);color:var(--navy);font-weight:900;font-size:1.2rem;margin-bottom:16px}.step h3{margin:0 0 7px;color:var(--navy)}.step p{margin:0;color:var(--muted)}
+    .cta{background:var(--navy);color:white;padding:64px 0}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1px;line-height:1.1;margin:0 0 12px}.cta p{color:#c6d1e3;margin:0}.cta .btn{flex-shrink:0;background:var(--gold);color:var(--navy)}
+    footer{padding:28px 0;background:#0a1929;color:#bdc8d8;font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;align-items:center}.footer-inner strong{color:white}
+    .whatsapp{position:fixed;right:20px;bottom:20px;z-index:20;border-radius:99px;padding:14px 18px;background:#1fae64;color:white;font-weight:900;box-shadow:0 10px 30px #0002}
+    @media(max-width:800px){.nav-links{display:none}.hero{padding:56px 0}.hero-grid,.why-grid{grid-template-columns:1fr;gap:32px}.ad-board{min-height:350px}.cards,.steps{grid-template-columns:1fr}.steps{gap:25px}.cta-inner{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1.5px}}
+  </style>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="brand" href="#home" aria-label="Creative Ads KE home"><span class="brand-mark">✦</span> Creative Ads KE</a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="#services">Our Services</a><a href="#why-us">Why Choose Us</a><a href="#how-it-works">How It Works</a></nav>
+  <a class="btn btn-primary" href="https://wa.me/254110056770?text=Hello%20Creative%20Ads%20KE%2C%20I%27d%20like%20an%20advertising%20quote.">Get a Quote ↗</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div><span class="eyebrow">✦ Creative ideas. Fair prices.</span>
+    <h1>Make your business stand out. <span>Get noticed.</span></h1>
+    <p>Creative Ads KE helps businesses and entrepreneurs promote their products and services with attractive, professional advertisements at fair and affordable prices. Your business deserves to be seen.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/254110056770?text=Hello%20Creative%20Ads%20KE%2C%20I%20want%20to%20advertise%20my%20business.">📲 Advertise With Us</a><a class="btn btn-light" href="#services">Explore Our Services</a></div>
+    <div class="trust">✓ Fair prices &nbsp; ✓ Creative designs &nbsp; ✓ Friendly service</div>
+  </div>
+  <div class="ad-board" aria-label="Creative advertising illustration">
+    <div class="floating one">📣 Get noticed!</div>
+    <div class="poster"><div class="poster-content"><div class="poster-small">Creative Ads KE presents</div><h2>BIG IDEAS. FAIR PRICES.</h2><p>Put your products and services in front of more people.</p><span class="poster-tag">LET'S PROMOTE YOU!</span></div></div>
+    <div class="floating two">💡 Your brand has potential</div>
+  </div>
+</div></section>
+<section class="services" id="services"><div class="container">
+  <div class="section-head"><span class="eyebrow">WHAT WE DO</span><h2>Creative advertising for growing businesses</h2><p>From a new business launch to a special offer, we help you share your message clearly and professionally.</p></div>
+  <div class="cards">
+    <article class="card"><div class="card-icon">📱</div><h3>Social Media Adverts</h3><p>Promotional content for sharing your business, offers, products and services online.</p></article>
+    <article class="card"><div class="card-icon">🎨</div><h3>Posters & Promotional Designs</h3><p>Eye-catching designs for sales, new products, events, announcements and special offers.</p></article>
+    <article class="card"><div class="card-icon">🚀</div><h3>Business Promotion</h3><p>Showcase what makes your brand special and help potential customers discover your products and services.</p></article>
+  </div>
+</div></section>
+<section id="why-us"><div class="container why-grid">
+  <div class="why-panel"><span class="eyebrow">GOOD VALUE, EVERY TIME</span><h3>Professional advertising shouldn't break the bank.</h3><p>We believe every entrepreneur deserves a chance to showcase their business, whatever their size or stage of growth.</p><a class="btn btn-primary" href="https://wa.me/254110056770?text=Hello%20Creative%20Ads%20KE%2C%20please%20share%20your%20advertising%20prices.">Ask About Our Prices</a></div>
+  <div><div class="section-head" style="text-align:left;margin:0 0 20px"><h2>Why choose Creative Ads KE?</h2><p>Clear communication, creative ideas and pricing that respects your budget.</p></div>
+    <ul class="check-list">
+      <li><span class="check">✓</span><div><strong>Fair and affordable pricing</strong><br><span style="color:#637087">Discuss an option that fits your needs and budget.</span></div></li>
+      <li><span class="check">✓</span><div><strong>Professional, creative designs</strong><br><span style="color:#637087">Make your message attractive, clear and easy to understand.</span></div></li>
+      <li><span class="check">✓</span><div><strong>Easy communication</strong><br><span style="color:#637087">Contact us directly to discuss your idea.</span></div></li>
+      <li><span class="check">✓</span><div><strong>For entrepreneurs and businesses</strong><br><span style="color:#637087">Promotional support for new and established businesses.</span></div></li>
+    </ul>
+  </div>
+</div></section>
+<section id="how-it-works" style="background:var(--cream)"><div class="container">
+  <div class="section-head"><span class="eyebrow">GET STARTED IN 3 STEPS</span><h2>Let's promote your business</h2><p>Getting started is simple. Tell us what you want people to know about your business.</p></div>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>Contact us</h3><p>Send us a WhatsApp message and tell us about your business.</p></div>
+    <div class="step"><div class="step-num">2</div><h3>Share your idea</h3><p>Tell us what you want to advertise and the budget you have in mind.</p></div>
+    <div class="step"><div class="step-num">3</div><h3>Get noticed</h3><p>We'll discuss a suitable advertising option at a fair price.</p></div>
+  </div>
+</div></section>
+<section class="cta"><div class="container cta-inner"><div><h2>Ready to put your business in the spotlight?</h2><p>Let's talk about an affordable advert for your business.</p></div><a class="btn" href="https://wa.me/254110056770?text=Hello%20Creative%20Ads%20KE%2C%20I%20want%20to%20promote%20my%20business.">Chat on WhatsApp ↗</a></div></section>
+</main>
+<footer><div class="container footer-inner"><div><strong>Creative Ads KE</strong> — Creative advertising at fair prices.</div><div>Call or WhatsApp: <a href="tel:+254110056770"><strong>0110 056 770</strong></a></div><div>© <span id="year">2026</span> Creative Ads KE. All rights reserved.</div></div></footer>
+<a class="whatsapp" href="https://wa.me/254110056770?text=Hello%20Creative%20Ads%20KE%2C%20I%27m%20interested%20in%20your%20advertising%20services." aria-label="Chat with Creative Ads KE on WhatsApp">☏ WhatsApp Us</a>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body></html>
